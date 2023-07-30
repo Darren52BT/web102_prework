@@ -11,16 +11,23 @@
     <div class="header">
         <img id="tentacles" src="assets/tentacles.png">
         <h1 class="header-text">Sea Monster Crowdfunding</h1>
+        <nav id="nav-bar">
+            <ul id="nav-bar-list">      
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#our-games">Our Games</a></li>
+            </ul>
+        </nav>
     </div>
 
     <!-- background info about company -->
-    <h2>Welcome to Sea Monster!</h2>
+    <h2 id="intro">Welcome to Sea Monster!</h2>
     <div id="description-container">
         <p>The purpose of our company is to fund independent games. We've been in operation for 12 years.</p>
     </div>
 
     <!-- top games & other interesting stats -->
-    <h2>Stats</h2>
+    <h2 id="stats">Stats</h2>
     <div class="stats-container">
         <div class="stats-card">
             <h3>Individual Contributions</h3>
@@ -48,12 +55,16 @@
     </div>
 
     <!-- list of games funded by Sea Monster -->
-    <h2>Our Games</h2>
+    <h2 id="our-games">Our Games</h2>
     <p>Check out each of our games below!</p>
     <div id="button-container">
         <button id="unfunded-btn">Show Unfunded Only</button>
         <button id="funded-btn">Show Funded Only</button>
         <button id="all-btn">Show All Games</button>
+        <div id="search-container">
+            <input type="text" id="search-bar"/>
+            <button id="search-btn">Search</button>
+        </div>
     </div>
     <div id="games-container">
 
